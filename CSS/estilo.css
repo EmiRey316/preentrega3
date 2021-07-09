@@ -189,8 +189,6 @@ footer {
 
 /*Estilo a la imagen principal en Home*/
 #imagenPresentacion {
-    width: 100%;
-    height: auto;
     animation: fadeInFromBottom;
     animation-duration: 1.5s;
 }
@@ -219,6 +217,7 @@ footer {
 /*Inicio de estilos particulares para la página "Plantel"*/
 .tablaPlantel {
     color: black;
+    width: 80%;
     border-collapse: collapse;
     border: black solid 1.5px;
     margin-bottom: 50px;
@@ -262,6 +261,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    .tablaPlantel {
+        width: 100%;
+    }
+
     .tablaPlantel th {
         font-size: 14px;
         padding: 4px 10px;
@@ -306,19 +309,9 @@ footer {
     width: 100%;
 }
 
-#polamaluImg {
-    width: 100%;
-    height: auto;
-}
-
 #polamaluMainGif {
     grid-area: Gif;
     width: 100%;
-}
-
-#polamaluGif {
-    width: 100%;
-    height: auto;
 }
 
 #polamaluSegundoTexto {
@@ -356,8 +349,6 @@ footer {
 
 /*Estilo para imagenes de la galería, con animación de animate.css*/
 .imgPequeñaGalería {
-    width: 100%;
-    height: auto;
     animation: zoomIn;
     animation-duration: 2s;
 }
@@ -375,11 +366,6 @@ footer {
 
 .galeriaVideos .mainTitulo {
     grid-column: 1 / 4;
-}
-
-.galeriaVideos video {
-    width: 100%;
-    height: auto;
 }
 
 /*Estilos para los modals o "Zoom" de las imagenes*/

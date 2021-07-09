@@ -54,9 +54,9 @@
 
     <main id="galeriaMain">
         <div class="galeriaImagenes">
-            <!--Contenedor con imágenes de los Steelers. Con Zoom al clickear, hecho con modal de Bootstrap-->
+            <!--Contenedor con imágenes de los Steelers. Con Zoom al clickear, hecho con modal de Bootstrap. También tienen la class img-fluid de BS para hacerlas responsive-->
             <h2 class="mainTitulo">Imágenes</h2>
-            <img src="../Imagenes/casco.jpg" alt="Casco Steelers en estadio" class="imgPequeñaGalería" data-bs-toggle="modal" data-bs-target="#modalCasco">
+            <img src="../Imagenes/casco.jpg" alt="Casco Steelers en estadio" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalCasco">
             <div class="modal fade" id="modalCasco" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <img src="../Imagenes/equipo.png" alt="Equipo saliendo a la cancha" class="imgPequeñaGalería" data-bs-toggle="modal" data-bs-target="#modalEquipo">
+            <img src="../Imagenes/equipo.png" alt="Equipo saliendo a la cancha" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalEquipo">
             <div class="modal fade" id="modalEquipo" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <img src="../Imagenes/TJWatt.png" alt="T. J. Watt festejando" class="imgPequeñaGalería" data-bs-toggle="modal" data-bs-target="#modalTJWatt">
+            <img src="../Imagenes/TJWatt.png" alt="T. J. Watt festejando" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalTJWatt">
             <div class="modal fade" id="modalTJWatt" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -86,7 +86,7 @@
                 </div>
             </div>
 
-            <img src="../Imagenes/tackle.jpg" alt="Tacle de varios jugadores" class="imgPequeñaGalería" data-bs-toggle="modal" data-bs-target="#modalTackle">
+            <img src="../Imagenes/tackle.jpg" alt="Tacle de varios jugadores" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalTackle">
             <div class="modal fade" id="modalTackle" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <img src="../Imagenes/recepcionAlta.jpg" alt="Recepción saltando" class="imgPequeñaGalería" data-bs-toggle="modal" data-bs-target="#modalRecepcion">
+            <img src="../Imagenes/recepcionAlta.jpg" alt="Recepción saltando" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalRecepcion">
             <div class="modal fade" id="modalRecepcion" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -106,7 +106,7 @@
                 </div>
             </div>
 
-            <img src="../Imagenes/heywardBloqueo.jpg" alt="Cameron Heyward Bloqueando" class="imgPequeñaGalería" data-bs-toggle="modal" data-bs-target="#modalBloqueo">
+            <img src="../Imagenes/heywardBloqueo.jpg" alt="Cameron Heyward Bloqueando" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalBloqueo">
             <div class="modal fade" id="modalBloqueo" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <img src="../Imagenes/mikeTomlin.jpg" alt="Head Coach Mike Tomlin" class="imgPequeñaGalería" data-bs-toggle="modal" data-bs-target="#modalMike">
+            <img src="../Imagenes/mikeTomlin.jpg" alt="Head Coach Mike Tomlin" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalMike">
             <div class="modal fade" id="modalMike" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -126,7 +126,7 @@
                 </div>
             </div>
 
-            <img src="../Imagenes/jugadorCaminando.png" alt="Jugador de espalda" class="imgPequeñaGalería" data-bs-toggle="modal" data-bs-target="#modalJugador">
+            <img src="../Imagenes/jugadorCaminando.png" alt="Jugador de espalda" class="imgPequeñaGalería img-fluid" data-bs-toggle="modal" data-bs-target="#modalJugador">
             <div class="modal fade" id="modalJugador" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl">
                     <div class="modal-content">
@@ -138,18 +138,18 @@
             <!--Fin de modals de Bootstrap-->
         </div>
 
-        <!-- Contenedor con videos de los Steelers, se quita de momento porque resultó muy pesado para el sitio-->
+        <!-- Contenedor con videos de los Steelers, con class img-fluid para hacerlos responive-->
         <div class="galeriaVideos">
             <h2 class="mainTitulo">Videos</h2>
-            <video controls>
+            <video controls class="img-fluid">
                 <source src="../Videos/immaculateReception.mkv">
                 <source src="../Videos/immaculateReception.mp4">
             </video>
-            <video controls>
+            <video controls class="img-fluid">
                 <source src="../Videos/santonioHolmesTD.mkv">
                 <source src="../Videos/santonioHolmesTD.mp4">
             </video>
-            <video controls>
+            <video controls class="img-fluid">
                 <source src="../Videos/polamaluInterception.mkv">
                 <source src="../Videos/polamaluInterception.mp4">
             </video>
